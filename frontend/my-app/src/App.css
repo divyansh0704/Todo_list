@@ -1,0 +1,128 @@
+/* .App {
+  font-family: Arial;
+  text-align: center;
+  margin-top: 30px;
+}
+input {
+  padding: 5px;
+  margin-right: 10px;
+}
+button {
+  padding: 5px 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 10px 0;
+} */
+/* App.css */
+
+body {
+  background: #f0f4f8;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  margin-right: 10px;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: #e3f2fd;
+}
+
+li span {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+li button {
+  background: #ff6b6b;
+}
+
+li button:hover {
+  background: #e94e4e;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 300px;         /* Set height limit */
+  overflow-y: auto;          /* Scroll when overflow */
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-right: 5px;
+}
+
+/* Optional scrollbar styling (Webkit browsers only) */
+/* ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-radius: 10px;
+} */
+

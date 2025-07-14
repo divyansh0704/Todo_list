@@ -9,7 +9,7 @@ function App(){
 
   const fetchTasks = async()=>{
     try {
-    const res = await axios.get("https://todo-list-crp4.onrender.com/tasks");
+    const res = await axios.get("http://localhost:5000/tasks");
     setTasks(res.data.task);
   } catch (err) {
     console.error("Fetch error:", err);
@@ -18,16 +18,16 @@ function App(){
   }
   const addTasks = async()=>{
     if(!title.trim()) return;
-    await axios.post("https://todo-list-crp4.onrender.com/tasks",{title,completed:false});
+    await axios.post("http://localhost:5000/tasks",{title,completed:false});
     setTitle("");
     fetchTasks();
   }
    const toggleTask = async (id, completed) => {
-    await axios.put(`https://todo-list-crp4.onrender.com/tasks/${id}`, { completed: !completed });
+    await axios.put(`http://localhost:5000/tasks/${id}`, { completed: !completed });
     fetchTasks();
   };
    const deleteTask = async (id) => {
-    await axios.delete(`https://todo-list-crp4.onrender.com/tasks/${id}`);
+    await axios.delete(`http://localhost:5000/tasks/${id}`);
     fetchTasks();
   };
   useEffect(() => {

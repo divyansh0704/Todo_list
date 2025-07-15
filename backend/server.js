@@ -18,6 +18,10 @@ db.sync()
   .then(()=>console.log("database Synced"))
   .catch((err)=>console.error("DB error",err));
 
+app.get("/", (req, res) => {
+  res.send("🟢 Portfolio backend is running!");
+});
+
 
 app.listen(PORT,()=>{
     console.log(`server is running on port ${PORT}`);

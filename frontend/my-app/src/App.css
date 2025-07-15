@@ -1,23 +1,4 @@
-/* .App {
-  font-family: Arial;
-  text-align: center;
-  margin-top: 30px;
-}
-input {
-  padding: 5px;
-  margin-right: 10px;
-}
-button {
-  padding: 5px 10px;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-li {
-  margin: 10px 0;
-} */
-/* App.css */
+
 
 body {
   background: #f0f4f8;
@@ -116,13 +97,36 @@ ul {
   padding-right: 5px;
 }
 
-/* Optional scrollbar styling (Webkit browsers only) */
-/* ul::-webkit-scrollbar {
-  width: 6px;
+@media (max-width: 600px) {
+  .app {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  input[type="text"] {
+    width: 92%;
+    margin: 0 0 10px 0;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  li button {
+    align-self: flex-end;
+    width: 100%;
+  }
 }
 
-ul::-webkit-scrollbar-thumb {
-  background-color: #c0c0c0;
-  border-radius: 10px;
-} */
+
+
 
